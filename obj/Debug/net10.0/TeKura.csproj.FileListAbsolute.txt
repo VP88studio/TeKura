@@ -1,0 +1,14 @@
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.GeneratedMSBuildEditorConfig.editorconfig
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.AssemblyInfoInputs.cache
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.AssemblyInfo.cs
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.csproj.CoreCompileInputs.cache
+/home/jimmithy/Code/TeKura/bin/Debug/net10.0/TeKura
+/home/jimmithy/Code/TeKura/bin/Debug/net10.0/TeKura.deps.json
+/home/jimmithy/Code/TeKura/bin/Debug/net10.0/TeKura.runtimeconfig.json
+/home/jimmithy/Code/TeKura/bin/Debug/net10.0/TeKura.dll
+/home/jimmithy/Code/TeKura/bin/Debug/net10.0/TeKura.pdb
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.dll
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/refint/TeKura.dll
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.pdb
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.genruntimeconfig.cache
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/ref/TeKura.dll
