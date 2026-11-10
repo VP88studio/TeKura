@@ -12,3 +12,4 @@
 /home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.pdb
 /home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.genruntimeconfig.cache
 /home/jimmithy/Code/TeKura/obj/Debug/net10.0/ref/TeKura.dll
+/home/jimmithy/Code/TeKura/obj/Debug/net10.0/TeKura.sourcelink.json
