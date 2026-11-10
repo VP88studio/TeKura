@@ -7,6 +7,8 @@ class MainProgram
     static void Main()
     {
         string result = "";
+        int fitness = 0;
+        int loopval = 0;
         Console.WriteLine(goal.Length);
         int goallen = goal.Length;
         //should be 217
@@ -21,7 +23,14 @@ class MainProgram
             string clen = AllowedCharacters[index];
             result = result + clen;
         }
-
+        for (int i = 0; i < glen; i++)
+        {
+            if (result[i] == goal[i])
+            {
+                fitness += 1;
+            }
+        }
         Console.WriteLine(result);
+        Console.WriteLine(fitness);
     }
 }
