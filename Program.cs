@@ -3,11 +3,27 @@ using System.ComponentModel.DataAnnotations;
 
 class MainProgram
 {
+    //debugfunc
+    static string PrintPopValue(Individual i)
+    {
+        return $"ID: {i.id}\nGenerationValue: {i.generationvalue}\nFitness: {i.fitness}\nPlaceValues: {string.Join(", ", i.Places)}";
+    }
     static string goal = "Hi my name is Jim, I love coding and gaming, my favorite game is Minecraft.\nI have a simple understanding of how to code in 8 programming languages.\nI like hanging out with my friends at school but strugle to be there";
+    public static Individual MakeCandadite(int gcount, string genstring, int fitness, List<int> tempplace)
+        {
+        Individual Candadite = new Individual();
+        Candadite.id = gcount;
+        Candadite.generationvalue = genstring;
+        Candadite.generationcount = 1;//tempbtw
+        Candadite.fitness = fitness;
+        Candadite.Places = tempplace;
+        return Candadite;
+    }
     static void Main()
     {
         //I coded this btw;
         string result = "";
+        int placevalue = 0;
         int fitness = 0;
         //candadites
         int candadites = 500;
@@ -19,8 +35,8 @@ class MainProgram
         "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ",", ".", " ", "\n", "'"};
         int alen = AllowedCharacters.Count;
         Console.WriteLine(alen);
-        List<string> Candadites = new List<string>() {};
-        List<int> FitnessList = new List<int>() {};
+        List<int> TempPlaceValue = new List<int>();
+        List<Individual> Population = new List<Individual>();
         //creating candadites
         for (int l = 0; l < candadites; l++)
         {
@@ -32,23 +48,27 @@ class MainProgram
             }
             for (int i = 0; i < glen; i++)
             {
+                placevalue += 1;
                 if (result[i] == goal[i])
                 {
+                    TempPlaceValue.Add(placevalue);
                     fitness += 1;
                 }
             }
-            FitnessList.Add(fitness);
-            Candadites.Add(result);
+            Population.Add(MakeCandadite(l, result, fitness, TempPlaceValue));
             fitness = 0;
             result = "";
+            placevalue = 0;
+            TempPlaceValue = new List<int>();
         }
-        Console.WriteLine(Candadites[1]);
-        Console.WriteLine(FitnessList[1]);
+        Console.WriteLine(PrintPopValue(Population[0]));
     }
 }
 public class Individual
 {
     public int id;
+    public List<int> Places = new List<int>();
     public string generationvalue;
+    public int generationcount;
     public int fitness;
 }

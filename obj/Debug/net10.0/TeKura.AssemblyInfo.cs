@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeKura")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+548a84a158566d59cebdb25b0c56915ce7542b77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8b1a2d5f958fe249e515d9311d62c0f3559fc3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeKura")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeKura")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
